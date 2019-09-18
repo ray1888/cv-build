@@ -22,11 +22,16 @@ Brief introduction: Developing with management platform With Python for commerci
 Deploying, Monitoring  re-developed distribution of Ceph.
 \begin{itemize}
   \item Implemented feature
-         1. Ceph iSCSI Monitor with iSCSI client counter 
-         2. NAS(network attach storage) Performance Monitor (including nfs & cifs)  
-         3. Cephx Management in api & ui 
-         4. Batch install without add ssh key with concurrency control & node recovery
-         5. the resource failure & restart speed with optimize the RCM(Resource Control Manager) process FSM
+    \item [1)]
+      Ceph iSCSI Monitor with iSCSI client counter 
+    \item [2)]
+      NAS(network attach storage) Performance Monitor (including nfs & cifs)  
+    \item [3)]
+      Cephx Management in api & ui 
+    \item [4)]
+      Batch install without add ssh key with concurrency control & node recovery
+    \item [5)]
+      The resource failure & restart speed with optimize the RCM(Resource Control Manager) process FSM
   \item Refactor Disk Management feature with a better abstraction design
   \item Remote Handling deploy & usage problem in various environment(included public cloud & private cloud) for on-site ops engineer
   \item Tech Stack: RabbitMQ, Mariadb with galera cluster, Python, Django, graphite(TSDB Monitor Compoenet)
@@ -39,15 +44,20 @@ Brief introduction: A Monitor system build for all rounded usage for infra monit
 And Using machine learn to adjust the threhold and optimize the wrong alert rate.
 \begin{itemize}
   \item Implemented feature
-        1. Maintain & develop the Web base backend with node.js
-        2. Implement the Majority part of Alert System (including the base rule, also add Compared with week feature)
-        3. add multi alert push hook (including Slack & wechat)
-        4. Write the basic ai train framework with sklearn (slice data into training and verifcation, trian model, evaluate model precision)
-        5. Dockerize the project with multi-dockerfile and docker-compose 
+    \item [1)]  
+      Maintain & develop the Web base backend with node.js
+    \item [2)]
+      Implement the Majority part of Alert System (including the base rule, also add Compared with week feature)
+    \item [3)]
+      Add multi alert push hook (including Slack & wechat)
+    \item [4)]
+      Write the basic ai train framework with sklearn (slice data into training and verifcation, trian model, evaluate model precision)
+    \item [5)]
+      Dockerize the project with multi-dockerfile and docker-compose 
   \item Optimized 
-        1. compare to early state bosun, we can change monitoring rules without restart the process 
+    Compare to early state bosun, we can change monitoring rules without restart the process 
   \item Award 
-        Successfully Entry the First AIOps Challenage (Held by tsinghua university) & get the 10th of the competition
+    Successfully Entry the First AIOps Challenage (Held by tsinghua university) & get the 10th of the competition
   \item Tech Stack: Redis, Mongodb, Python, OPENTSDB, tcollector, node.js, sklearn
 \end{itemize}
 
