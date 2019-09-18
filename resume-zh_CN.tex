@@ -1,0 +1,95 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{陈俊宏}
+
+\basicInfo{
+  \email{alal1995@hotmail.com} \textperiodcentered\ 
+%   \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
+%   \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+ 
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{统一存储平台} 深圳市杉岩数据技术有限公司 深圳}{2018年8月 -- 2019年7月}
+\role{后端开发}{组长: 杨德柳}
+简介：
+\begin{itemize}
+  \item 实现了如下特性
+        1. 从Ceph iSCSI 中获取性能统计并且展示到页面上
+        2. Nas（网络附加存储）的性能统计（包括nfs和cifs的协议的统计）
+        3. 提供Cephx功能的对外操作api和ui（把原生Cephx的复杂的配置方法变成一键完成）
+        4. 批量安装（不添加ssh公钥，对客户机器无侵入）和节点回复的功能
+        5. 提升被依赖管理进程重试的速度，通过修改RCM（资源控制管理）进程中的状态机进行实现
+  \item 重构了磁盘管理的功能，实现对用户层的存储介质的屏蔽，使得用户更加易用
+  \item 部分职责：需要支持前端的同事（售前和运维）继续问题的处理，成功支持软件在多种公有云和私有云的部署以及问题的修复
+  \item 技术栈： RabbitMQ, Mariadb with galera cluster, Python, Django, graphite(TSDB的监控模块)
+                Shell(主要支持安装、批量安装、卸载))
+\end{itemize}
+
+\datedsubsection{\textbf{Argus监控系统} 广州优亿信息科技有限公司}{2014年6月 -- 至今}
+\role{后端开发}
+项目简介： 项目是为了提供全面的监控而设立的。提供基础架构级别的监控、应用级别的监控、分布式追踪级别的监控。并且使用了机器学习的技术来调整告警的阈值和降低误报率
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 实现了一下功能
+        1. 使用node.js接手开发用户界面后端的逻辑
+        2. 实现大部分的监控告警的功能（包含了其他监控上有的基础功能之外，还实现了同比和环比的功能）
+        3. 添加了多个告警的推送方式（包括 Slack 和 微信）
+        4. 基于sklearn的算法，编写了适用于项目的AI训练流程（包括数据切片， 模型训练，模型认证，模型输出）
+        5. 整个大项目项目进行docker化，可以通过docker-compose 即可进行简易的部署
+  \item 项目优势
+        与同期稳定版的Bosun项目相比，我们的监控系统可以支持热更新监控规则，而Bosun需要重启并且使用脚本重新生成告警配置。
+  \item 获奖情况
+        成功打入第一节AIOPs竞赛（由清华大学进行主办）， 并且最终获得第10名的成绩。
+  \item 技术栈: Redis, Mongodb, Python, OPENTSDB, tcollector, node.js, sklearn
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Python，GO > shell > JavaScript
+  \item 平台: Linux
+  \item 其他相关技能：git, docker, jenkins
+  \item 开发: Web, git, BackendDevelopment, DevOPS
+\end{itemize}
+
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{广东工业大学}, 广州}{2013 -- 2017}
+\textit{学士}\ 物联网工程
+
+\section{\faHeartO\ 获奖情况}
+\textit{完成MIT 6.824 分布式系统课程}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+    \item 博客: http://ray1888.github.io 
+    \item GitHub: https://github.com/ray1888
+    \item 语言: 英语 - 熟练(六级 score:509), 普通话 - 流利, 粤语 - 流利
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

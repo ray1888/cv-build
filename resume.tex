@@ -7,70 +7,70 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{JunHong Chen}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{alal1995@hotmail.com} \textperiodcentered\ 
+  % \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
+  % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\datedsubsection{\textbf{Unifly Storage Platform} Sandstone Co.,LTD, Shenzhen, China}{Aug 2018 -- Jul 2019}
+\role{PythonBackEndDev, DevOP}{Manager: Deliu Yang}
+Brief introduction: Developing with management platform With Python for commercial re-packaged Ceph Storage System as a service (Saas) for 
+Deploying, Monitoring  re-developed distribution of Ceph.
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Implemented feature
+         1. Ceph iSCSI Monitor with iSCSI client counter 
+         2. NAS(network attach storage) Performance Monitor (including nfs & cifs)  
+         3. Cephx Management in api & ui 
+         4. Batch install without add ssh key with concurrency control & node recovery
+         5. the resource failure & restart speed with optimize the RCM(Resource Control Manager) process FSM
+  \item Refactor Disk Management feature with a better abstraction design
+  \item Remote Handling deploy & usage problem in various environment(included public cloud & private cloud) for on-site ops engineer
+  \item Tech Stack: RabbitMQ, Mariadb with galera cluster, Python, Django, graphite(TSDB Monitor Compoenet)
+        Shell(Install & Batch install script & remove script)
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\datedsubsection{\textbf{Argus Monitor Project} Useease Co.LTD, Guangzhou, China}{Jul 2017 -- Apr.2018}
+\role{BackendDev}{OpenSource Projects, collaborated with Team Arugs}
+Brief introduction: A Monitor system build for all rounded usage for infra monitor, application monitor, distributed tracing monitor. 
+And Using machine learn to adjust the threhold and optimize the wrong alert rate.
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Implemented feature
+        1. Maintain & develop the Web base backend with node.js
+        2. Implement the Majority part of Alert System (including the base rule, also add Compared with week feature)
+        3. add multi alert push hook (including Slack & wechat)
+        4. Write the basic ai train framework with sklearn (slice data into training and verifcation, trian model, evaluate model precision)
+        5. Dockerize the project with multi-dockerfile and docker-compose 
+  \item Optimized 
+        1. compare to early state bosun, we can change monitoring rules without restart the process 
+  \item Award 
+        Successfully Entry the First AIOps Challenage (Held by tsinghua university) & get the 10th of the competition
+  \item Tech Stack: Redis, Mongodb, Python, OPENTSDB, tcollector, node.js, sklearn
 \end{itemize}
-
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
-\begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
-\end{itemize}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
+  \item Programming Languages: Python，GO > shell > JavaScript
   \item Platform: Linux
-  \item Development: Web, xxx
+  \item Other: git, docker, jenkins
+  \item Development: Web, git, BackendDevelopment, DevOPS
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Guangdong University of Technology (GDUT)}, guangzhou, China}{2013 -- 2017}
+\textit{B.S.} in Internet of Thing
+
+\section{\faHeartO\ Programming Apart from work }
+\textit{Finish MIT 6.824 Distributed System Course}
 
 \section{\faInfo\ Miscellaneous}
 \begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+  \item Blog: http://ray1888.github.io 
+  \item GitHub: https://github.com/ray1888
+  \item Languages: English - Fluent(CET-6 score:509), Mandarin - Native speaker, Cantonese - Native speaker
 \end{itemize}
 
 %% Reference
