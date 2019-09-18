@@ -13,76 +13,89 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{陈俊宏}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+  \email{alal1995@hotmail.com} \textperiodcentered\ 
+%   \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
+%   \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+}
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
+\section{\faUsers\ 项目经历}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
+\datedsubsection{\textbf{统一存储平台}}{2018.08 -- 2019.07}
+\company{深圳市杉岩数据技术有限公司} \textperiodcentered\ 
+\role{后端开发}{组长: 杨德柳}
+简介: 使用Python开发基于Ceph的管理平台，对外提供二次发行版的Ceph，提供了给用户简单易用的UI而不用基于命令行进行管理。平台支持了Ceph的部署，存储网关部署、以及相关的监控（服务、进程、性能级别的监控）
+    \subsubsection{\textbf {实现了如下特性}}
+    \begin{itemize}
+        \item [1)]
+          添加监控收集指标(1.Nas[网络附加存储]的性能统计[包括nfs和cifs的协议的统计] 2. collect iSCSI Performance with ceph client )
+        \item [2)]
+          实现一键打开CephX功能的API（包括了配置修改、密钥创建并且相关业务进程的重启）
+        \item [3)]
+        批量安装（不添加ssh公钥，对客户机器无侵入， 并且提供并发控制）和节点回复的功能（用于硬件故障或者系统重装后的配置的重新生成并且加入集群）
+    \end{itemize}
+    \subsubsection{\textbf {取得的成绩}}
+    \begin{itemize}
+        \item [1)]
+            重构了磁盘管理的功能，实现对用户层的存储介质的屏蔽，使得用户更加易用
+        \item [2)] 
+            部分职责：需要支持前端的同事（售前和运维）继续问题的处理，成功支持软件在多种公有云和私有云的部署以及问题的修复
+    \end{itemize}
+    \begin{itemize}
+    \item 技术栈： RabbitMQ, Mariadb with galera cluster, Python, Django, graphite(TSDB的监控模块)
+    Shell(主要支持安装、批量安装、卸载))
+    \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
-\end{itemize}
-\end{onehalfspacing}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\datedsubsection{\textbf{Argus监控系统}}{2017.07 -- 2018.04}
+\company{广州优亿信息科技有限公司} \textperiodcentered\ 
+\role{后端开发}{组长: 汤英康}
+项目简介： 项目是为了提供全面的监控而设立的。提供基础架构级别的监控、应用级别的监控、分布式追踪级别的监控。并且使用了机器学习的技术来调整告警的阈值和降低误报率
+    \subsubsection{\textbf {实现了如下特性}}
+    \begin{itemize}
+        \item [1)]
+            使用node.js接手开发用户界面后端的逻辑和Dashboard的接口
+        \item [2)]
+            实现大部分的监控告警的功能（包含了其他监控上有的基础功能之外，还实现了同比和环比的功能, 并且支持告警推送到Slack和微信）
+        \item [3)]   
+            基于sklearn的算法，编写了适用于项目的AI训练流程（包括数据切片， 模型训练，模型认证，模型输出） 
+        \item [4)] 
+            整个大项目项目进行docker化，可以通过docker-compose 即可进行简易的部署
+    \end{itemize}
+    \subsubsection{\textbf {取得的成绩}}
+    \begin{itemize}
+        \item [1)]
+            与同期稳定版的Bosun项目相比，我们的监控系统可以支持热更新监控规则，而Bosun需要重启并且使用脚本重新生成告警配置。
+        \item [2)] 
+            成功打入第一节AIOPs竞赛（由清华大学进行主办）， 并且最终获得第10名的成绩。
+    \end{itemize}
+    \begin{itemize}
+    \item 技术栈： Redis, Mongodb, Python, OPENTSDB, tcollector, node.js, sklearn
+    \end{itemize}
 
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
+  \item 编程语言: Python，GO > shell > JavaScript
   \item 平台: Linux
-  \item 开发: xxx
+  \item 其他相关技能：git, docker, jenkins
+  \item 开发: Web, git, BackendDevelopment, DevOPS
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{广东工业大学}, 广州}{2013 -- 2017}
+\textit{学士}\ 物联网工程
+
+\section{\faHeartO\ 业余学习}
+\textit{完成MIT 6.824 分布式系统课程}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+    \item 博客: http://ray1888.github.io 
+    \item GitHub: https://github.com/ray1888
+    \item 语言: 英语 - 熟练(六级 score:509), 普通话 - 流利, 粤语 - 流利
 \end{itemize}
 
 %% Reference
