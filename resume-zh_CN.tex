@@ -17,13 +17,42 @@
 
 \basicInfo{
   \email{alal1995@hotmail.com} \textperiodcentered\ 
-%   \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
+  \phone{(+86) 156-2232-1518} \textperiodcentered\ 
 %   \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
  
 
 \section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{一对一系统开发} 广州星火在线1对1 }{2019年10月 -- 至今}
+\role{Golang 后端开发}
+简介：
+\begin{itemize}
+  \item 职能开发
+    \item [1)] 
+    负责运营系统功能开发(签单、退款、支付、增长模型部分、多省区数据权限功能、微信公众号）
+    \item [2)]
+    上课系统业务系统开发(课件、排课系统)
+  \item 团队工具及性能优化
+    \item [1)] 
+    迁移 Go 版本（从1.12 到1.13），并且把项目整体依赖管理切换到 GoModule
+    \item [2)] 
+    开发 Migration 命令行迁移工具，方便数据迁移和迁移记录审计。提升部署运维效率（部署时间从原来大于30分钟，到目前上版本约6分钟）
+    \item [3)] 
+    使用 Jenkins + 阿里云托管 Kubernets 构建CI体系，支持项目快速迭代。同时规范化上线代码流程
+    \item [4)] 
+    业务系统部分复杂接口慢Sql优化（通过重构部分逻辑，使部分慢接口由大于1秒耗时，减到小于 300ms，提升70\%)
+    \item [5)] 
+    结合日志系统，实现链路追踪功能，提高团队debug效率（自己实现这套的而不使用 jaeger 进行实现是因为系统没有多余资源部署jaeger)
+  \item 团队贡献
+   \item [1)] 
+      推动功能设计文档进入研发SOP中,规范化开发流程
+   \item [2)]
+      编写 Git 团队使用文档（合并代码、发版规范、Commit格式，减少团队因为代码管理问题而产生线上问题）
+   \item [3)]
+      编写脚本嵌入Git Pre-Commit Hook中，每次提交强制检查代码，减少代码低级错误
+\end{itemize}
+
 \datedsubsection{\textbf{统一存储平台} 深圳市杉岩数据技术有限公司 深圳}{2018年8月 -- 2019年7月}
-\role{后端开发}{组长: 杨德柳}
+\role{Python 后端开发}
 简介：
 \begin{itemize}
   \item 实现了如下特性
@@ -42,29 +71,6 @@
   \item 技术栈： RabbitMQ, Mariadb with galera cluster, Python, Django, graphite(TSDB的监控模块)
                 Shell(主要支持安装、批量安装、卸载))
 \end{itemize}
-
-\datedsubsection{\textbf{Argus监控系统} 广州优亿信息科技有限公司}{2014年6月 -- 至今}
-\role{后端开发}
-项目简介： 项目是为了提供全面的监控而设立的。提供基础架构级别的监控、应用级别的监控、分布式追踪级别的监控。并且使用了机器学习的技术来调整告警的阈值和降低误报率
-\begin{onehalfspacing}
-\begin{itemize}
-  \item 实现了一下功能
-  \item [1)]
-     使用node.js接手开发用户界面后端的逻辑
-  \item [2)]
-     实现大部分的监控告警的功能（包含了其他监控上有的基础功能之外，还实现了同比和环比的功能）
-  \item [3)]
-     添加了多个告警的推送方式（包括 Slack 和 微信）
-  \item [4)]
-     基于sklearn的算法，编写了适用于项目的AI训练流程（包括数据切片， 模型训练，模型认证，模型输出）
-  \item [5)]
-     整个大项目项目进行docker化，可以通过docker-compose 即可进行简易的部署
-  \item 项目优势
-     与同期稳定版的Bosun项目相比，我们的监控系统可以支持热更新监控规则，而Bosun需要重启并且使用脚本重新生成告警配置。
-  \item 获奖情况
-     成功打入第一节AIOPs竞赛（由清华大学进行主办）， 并且最终获得第10名的成绩。
-  \item 技术栈: Redis, Mongodb, Python, OPENTSDB, tcollector, node.js, sklearn
-\end{itemize}
 \end{onehalfspacing}
 
 % Reference Test
@@ -77,10 +83,10 @@
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: Python，GO > shell > JavaScript
+  \item 编程语言: GO > Python > shell 
   \item 平台: Linux
-  \item 其他相关技能：git, docker, jenkins
-  \item 开发: Web, git, BackendDevelopment, DevOPS
+  \item 其他相关技能：git, docker, jenkins, 阿里云使用经验（日志系统，kubernetes， alimns）
+  \item 开发: Web, git, BackendDevelopment, DevOPS, 监控系统
 \end{itemize}
 
 \section{\faGraduationCap\  教育背景}
@@ -88,7 +94,8 @@
 \textit{学士}\ 物联网工程
 
 \section{\faHeartO\ 获奖情况}
-\textit{完成MIT 6.824 分布式系统课程}
+\textit{打入第一届清华大学举办 AIOps 竞赛的全国第十名}
+\textit{完成 MIT6.824 分布式系统课程}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
