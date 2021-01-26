@@ -22,54 +22,106 @@
 }
 
 \section{\faUsers\ 项目经历}
-\datedsubsection{\textbf{一对一系统开发} 广州星火在线1对1 }{2019年10月 -- 至今}
-\role{Golang 后端开发}
-简介：
+\datedsubsection{\textbf{一对一系统开发 }   广州星火在线1对1} {2019.10 -- 至今}
+\role{Golang后端开发}
+\text{项目介绍：本项目是用于支撑星火在线一对一的在线直播业务，包含排课平台、订单、直播、运营增长平台，多个平台来支撑业务线的发展}
 \begin{itemize}
-  \item 职能开发
-    \item [1)] 
-    负责运营系统功能开发(签单、退款、支付、增长模型部分、多省区数据权限功能、微信公众号）
-    \item [2)]
-    上课系统业务系统开发(课件、排课系统)
-  \item 团队工具及性能优化
-    \item [1)] 
-    迁移 Go 版本（从1.12 到1.13），并且把项目整体依赖管理切换到 GoModule
-    \item [2)] 
-    开发 Migration 命令行迁移工具，方便数据迁移和迁移记录审计。提升部署运维效率（部署时间从原来大于30分钟，到目前上版本约6分钟）
-    \item [3)] 
-    使用 Jenkins + 阿里云托管 Kubernets 构建CI体系，支持项目快速迭代。同时规范化上线代码流程
-    \item [4)] 
-    业务系统部分复杂接口慢Sql优化（通过重构部分逻辑，使部分慢接口由大于1秒耗时，减到小于 300ms，提升70\%)
-    \item [5)] 
-    结合日志系统，实现链路追踪功能，提高团队debug效率（自己实现这套的而不使用 jaeger 进行实现是因为系统没有多余资源部署jaeger)
-  \item 团队贡献
-   \item [1)] 
-      推动功能设计文档进入研发SOP中,规范化开发流程
-   \item [2)]
-      编写 Git 团队使用文档（合并代码、发版规范、Commit格式，减少团队因为代码管理问题而产生线上问题）
-   \item [3)]
-      编写脚本嵌入Git Pre-Commit Hook中，每次提交强制检查代码，减少代码低级错误
+   \item 实现了如下特性
+   \begin{itemize}
+     \item 业务相关开发
+     \begin{enumerate}
+       \item 负责运营系统功能开发(签单、退款、支付、增长模型部分、多省区数据权限功能、微信公众号）
+       \item 上课系统业务系统开发(课件、排课系统)
+       \item 优化业务系统部分复杂接口慢Sql优化（通过重构部分逻辑，使部分慢接口由大于1秒耗时，减少到 100ms，提升70\%)
+     \end{enumerate}
+   \end{itemize}
+   \begin{itemize}
+     \item 团队工具相关开发
+     \begin{enumerate}
+       \item 开发 Migration 命令行迁移工具，方便数据迁移和迁移记录审计。提升部署运维效率（部署时间从原来大于30分钟，到目前上版本约6分钟）。规范化上线代码流程
+       \item 结合日志系统，实现链路追踪功能，提高团队debug效率（自己实现这套的而不使用 jaeger 进行实现是因为系统资源有限无法部署jaeger)
+     \end{enumerate}
+   \end{itemize}
+   \begin{itemize}
+     \item 阿里云 Kubernetes 相关使用经验
+     \begin{enumerate}
+       \item 结合 Jenkins 和 kubernetes 整合CI（持续集成流程）， 通过编写 Groovy 脚本整合 CI PipeLine， 把原来每次发布的时间缩短了50\%
+       \item 维护测试环境的应用(DeployMent) 发布和数据库（使用StatefulSet) ，结合阿里云云盘进行部署。稳定提供测试环境
+     \end{enumerate}
+   \end{itemize}
 \end{itemize}
 
-\datedsubsection{\textbf{统一存储平台} 深圳市杉岩数据技术有限公司 深圳}{2018年8月 -- 2019年7月}
-\role{Python 后端开发}
-简介：
+\begin{itemize}
+  \item 取得成绩
+  \begin{itemize}
+    \item 团队贡献
+    \begin{enumerate}
+      \item 团队文档（1、推动功能设计文档进入研发SOP中,规范化开发流程； 2、编写 Git 团队使用文档（合并代码、发版规范、Commit格式，减少团队因为代码管理问题而产生线上问题）
+      \item 编写脚本嵌入Git Pre-Commit Hook中，每次提交强制检查代码，减少代码低级错误
+      \item 迁移 Go 版本（从1.12 到1.13），并且把项目整体依赖管理切换到 GoModule
+    \end{enumerate}
+    \item 业务支撑
+    \begin{enumerate}
+      \item 支持团队用户量从日总课次数从2019年 200个一对一课次上课到 目前日总课次高峰为 700个课次 
+    \end{enumerate}
+  \end{itemize}
+  \item 技术栈：Golang, PostgreSQL, Redis, Gin, Jenkins, 阿里云相关云开发工具（监控、日志、Kubernetes、对象存储、Alimns消息队列)
+\end{itemize}
+
+
+\datedsubsection{\textbf{统一存储平台 } 深圳市杉岩数据技术有限公司} {2018.08 - 2019.07}
+\role{Python后端开发}
+\text{离职原因：因个人和家庭原因返回广州(家在广州)}
+\newline
+\text{项目介绍：本项目是用于提供更易用的运维管理平台用于 Ceph 存储， 主要提供块存储相关的功能}
+\begin{onehalfspacing}
 \begin{itemize}
   \item 实现了如下特性
-    \item [1)] 
-    从Ceph iSCSI 中获取性能统计并且展示到页面上
-    \item [2)]
-    Nas（网络附加存储）的性能统计（包括nfs和cifs的协议的统计）
-    \item [3)]
-    提供Cephx功能的对外操作api和ui（把原生Cephx的复杂的配置方法变成一键完成）
-    \item [4)]
-    批量安装（不添加ssh公钥，对客户机器无侵入）和节点回复的功能
-    \item [5)]
-    提升被依赖管理进程重试的速度，通过修改RCM（资源控制管理）进程中的状态机进行实现
-  \item 重构了磁盘管理的功能，实现对用户层的存储介质的屏蔽，使得用户更加易用
-  \item 部分职责：需要支持前端的同事（售前和运维）继续问题的处理，成功支持软件在多种公有云和私有云的部署以及问题的修复
+  \begin{enumerate}
+    \item  从 Ceph iSCSI 中获取性能统计功能
+    \item  NAS（网络附加存储）的性能统计（包括nfs和cifs的协议的统计）
+    \item 提供 Cephx 功能的对外操作api和ui（把原生Cephx的复杂的配置方法变成一键完成）
+    \item 和节点回复的功能批量安装（不添加ssh公钥，对客户机器无侵入）
+    \item 提升被依赖管理进程重试的速度，通过修改RCM（资源控制管理）进程中的状态机进行实现
+  \end{enumerate}
+  \item 取得的成绩
+  \begin{enumerate}
+    \item 重构了磁盘管理的功能，实现对用户层的存储介质(HDD,SSD,NVME SSD)的屏蔽，使得用户更加易用
+    \item 部分职责：需要支持前端的同事（售前和运维）继续问题的处理，成功支持软件在多种公有云和私有云的部署以及问题的修复
+  \end{enumerate}
+\end{itemize}
+\begin{itemize}
   \item 技术栈： RabbitMQ, Mariadb with galera cluster, Python, Django, graphite(TSDB的监控模块)
                 Shell(主要支持安装、批量安装、卸载))
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{Argus 监控系统 }  广州优亿信息科技有限公司} {2017.07 -- 2018.05}
+\role{后端开发}
+\text{离职原因：团队老大离职去腾讯，团队解散，不想转去其他团队去写Java}
+\newline
+\text{项目简介： 项目是为了提供全面的监控而设立的。提供基础架构级别的监控、应用级别的监控、分布式追踪级别的监控。并且使用了机器学习的技术来调整告警的阈值和降低误报率}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item 实现以下功能
+  \begin{itemize}
+    \item [1)]
+     接手离职同事编写的 NodeJS 开发用户界面后端的逻辑
+    \item [2)]
+      实现大部分的监控告警的功能（包含了其他监控上有的基础功能之外，还实现了同比和环比的功能）
+    \item [3)]
+      添加了多个告警的推送方式（包括 Slack 和 微信）
+    \item [4)]
+      基于 sklearn 的算法，编写了适用于项目的AI训练流程（包括数据切片， 模型训练，模型认证，模型输出）
+    \item [5)]
+      整个大项目项目进行 docker 化，可以通过 docker-compose 即可进行简易的部署 
+  \end{itemize}
+  \item 获得成绩
+  \begin{itemize}
+    \item [1)]成功打入第一节 AIOPs 竞赛（由清华大学进行主办）， 并且最终获得第10名的成绩。
+    \item [2)]成功支撑电信的信号监控系统
+  \end{itemize}
+  \item 技术栈: Redis, MongoDB, Python, OPENTSDB, tcollector, NodeJS, sklearn
 \end{itemize}
 \end{onehalfspacing}
 
@@ -93,12 +145,9 @@
 \datedsubsection{\textbf{广东工业大学}, 广州}{2013 -- 2017}
 \textit{学士}\ 物联网工程
 
-\section{\faHeartO\ 获奖情况}
-\textit{打入第一届清华大学举办 AIOps 竞赛的全国第十名}
-\textit{完成 MIT6.824 分布式系统课程}
-
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
+\textit{在业余时间完成 MIT6.824 分布式系统课程}
 \begin{itemize}[parsep=0.5ex]
     \item 博客: http://ray1888.github.io 
     \item GitHub: https://github.com/ray1888
