@@ -10,77 +10,156 @@
 \name{JunHong Chen}
 
 \basicInfo{
-  \email{alal1995@hotmail.com} \textperiodcentered\ 
-  % \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
-
+  \email{alal1995@hotmail.com} \textperiodcentered\
+  \phone{(+86) 15622321518} \textperiodcentered
+  %\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+}
 
 \section{\faUsers\ Experience}
-\datedsubsection{\textbf{Unifly Storage Platform} Sandstone Co.,LTD, Shenzhen, China}{Aug 2018 -- Jul 2019}
-\role{PythonBackEndDev, DevOP}{Manager: Deliu Yang}
-Brief introduction: Developing with management platform With Python for commercial re-packaged Ceph Storage System as a service (Saas) for 
-Deploying, Monitoring  re-developed distribution of Ceph.
+\datedsubsection{\textbf{Lark}  ByteDance.Ltd, Guangzhou, China} {2021.03 -- present}
+\role{Backend Engineer}
+\text{reason of Considering Opportunity: Personal Career}
+\newline
+\text{Brief Introduction: Supporting Lark Performance & LevelSalary Adjust System for internal(ByteDance) and SaaS Service }
+
 \begin{itemize}
-  \item Implemented feature
-    \item [1)]
-      Ceph iSCSI Monitor with iSCSI client counter 
-    \item [2)]
-      NAS(network attach storage) Performance Monitor (including nfs & cifs)  
-    \item [3)]
-      Cephx Management in api & ui 
-    \item [4)]
-      Batch install without add ssh key with concurrency control & node recovery
-    \item [5)]
-      The resource failure & restart speed with optimize the RCM(Resource Control Manager) process FSM
-  \item Refactor Disk Management feature with a better abstraction design
-  \item Remote Handling deploy & usage problem in various environment(included public cloud & private cloud) for on-site ops engineer
-  \item Tech Stack: RabbitMQ, Mariadb with galera cluster, Python, Django, graphite(TSDB Monitor Compoenet)
-        Shell(Install & Batch install script & remove script)
+  \item 实现了如下特性
+        \begin{itemize}
+          \item 业务相关开发
+                \begin{enumerate}
+                  \item 负责运营系统功能开发(签单、退款、支付、增长模型部分、多省区数据权限功能、微信公众号）
+                  \item 上课系统业务系统开发(课件、排课系统)
+                  \item 优化业务系统部分复杂接口慢Sql优化（通过重构部分逻辑，使部分慢接口由大于1秒耗时，减少到 100ms，提升70\%)
+                \end{enumerate}
+        \end{itemize}
+        \begin{itemize}
+          \item 团队工具相关开发
+                \begin{enumerate}
+                  \item 开发 Migration 命令行迁移工具，方便数据迁移和迁移记录审计。提升部署运维效率（部署时间从原来大于30分钟，到目前上版本约6分钟）。规范化上线代码流程
+                  \item 结合日志系统，实现链路追踪功能，提高团队debug效率（自己实现这套的而不使用 jaeger 进行实现是因为系统资源有限无法部署jaeger)
+                \end{enumerate}
+        \end{itemize}
+        \begin{itemize}
+          \item 阿里云 Kubernetes 相关使用经验
+                \begin{enumerate}
+                  \item 结合 Jenkins 和 kubernetes 整合CI（持续集成流程）， 通过编写 Groovy 脚本整合 CI PipeLine， 把原来每次发布的时间缩短了50\%
+                  \item 维护测试环境的应用(DeployMent) 发布和数据库（使用StatefulSet) ，结合阿里云云盘进行部署。稳定提供测试环境
+                \end{enumerate}
+        \end{itemize}
 \end{itemize}
 
-\datedsubsection{\textbf{Argus Monitor Project} Useease Co.LTD, Guangzhou, China}{Jul 2017 -- Apr.2018}
-\role{BackendDev}{OpenSource Projects, collaborated with Team Arugs}
-Brief introduction: A Monitor system build for all rounded usage for infra monitor, application monitor, distributed tracing monitor. 
-And Using machine learn to adjust the threhold and optimize the wrong alert rate.
 \begin{itemize}
-  \item Implemented feature
-    \item [1)]  
-      Maintain & develop the Web base backend with node.js
-    \item [2)]
-      Implement the Majority part of Alert System (including the base rule, also add Compared with week feature)
-    \item [3)]
-      Add multi alert push hook (including Slack & wechat)
-    \item [4)]
-      Write the basic ai train framework with sklearn (slice data into training and verifcation, trian model, evaluate model precision)
-    \item [5)]
-      Dockerize the project with multi-dockerfile and docker-compose 
-  \item Optimized 
-    Compare to early state bosun, we can change monitoring rules without restart the process 
-  \item Award 
-    Successfully Entry the First AIOps Challenage (Held by tsinghua university) & get the 10th of the competition
-  \item Tech Stack: Redis, Mongodb, Python, OPENTSDB, tcollector, node.js, sklearn
+  \item 取得成绩
+        \begin{itemize}
+          \item 团队贡献
+                \begin{enumerate}
+                  \item 团队文档（1、推动功能设计文档进入研发SOP中,规范化开发流程； 2、编写 Git 团队使用文档（合并代码、发版规范、Commit格式，减少团队因为代码管理问题而产生线上问题）
+                  \item 编写脚本嵌入 Git Pre-Commit Hook 中，每次提交强制检查代码，减少代码低级错误
+                  \item 迁移 Go 版本（从1.12 到1.13），并且把项目整体依赖管理切换到 GoModule
+                \end{enumerate}
+          \item 业务支撑
+                \begin{enumerate}
+                  \item 支持团队用户量从日总课次数从2019年 200个一对一课次上课到 目前日总课次高峰为 700个课次
+                \end{enumerate}
+        \end{itemize}
+  \item 技术栈：Golang, PostgreSQL, Redis, Gin, Jenkins, 阿里云相关云开发工具（监控、日志、Kubernetes、对象存储、Alimns消息队列)
 \end{itemize}
+
+
+\datedsubsection{\textbf{Backend Engineer}  XingHuoEducation1on1 Guangzhou, China} {2019.10 -- 2021.01}
+\role{Golang Backend Engineer}
+\text{reason of Considering Opportunity: Personal Career}
+\newline
+\text{Brief Introduction: Supporting XingHuo Education 1on1 with Ordering, Growth, Lesson Platform for bussine growing}
+\begin{itemize}
+  \item Thing Have Done
+        \begin{itemize}
+          \item Development of Bussiness
+                \begin{enumerate}
+                  \item Operation Plation Development
+                        \begin{enumerate}
+                          \item Payment & Refund Module
+                          \item Bussine Intelligence (DataPermission, Groth Hacking)
+                          \item CMS for Wechat Official Account
+                        \end{enumerate}
+                  \item
+                  \item Online Lesson Platform Development(Courseware Management & Lesson ArrangeMent Module)
+                  \item Optimizing SystemPerform(Including Code Performance & Slow SQL Optimizing)
+                \end{enumerate}
+        \end{itemize}
+        \begin{itemize}
+          \item Effiency Tool
+                \begin{enumerate}
+                  \item Developed Migraion CLI(audit & create migration Script), less spending time for deployment(from 30min -> 6min)
+                  \item Building Log Tracing System  With AliCloud Logging System
+                \end{enumerate}
+        \end{itemize}
+        \begin{itemize}
+          \item CI Related
+                \begin{enumerate}
+                  \item Integrate Deployment Flow With Jenkins And Kubernetes(By Writing Groovy Script), less spending 50\% time for deployment
+                  \item maintained Stable Test & Online environment with AliCloud Kubernetes(AKS) & AliCloud RDS
+                \end{enumerate}
+        \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+  \item Achivement
+        \begin{itemize}
+          \item Team Effiency Tool Build
+                \begin{enumerate}
+                  \item Build the SOP of R&D (Writing Feature design doc & promote the SOP of Git usage)
+                  \item Intergrated Linting Tool(golint-ci) to Git Pre-Commit Hook Checking, Reduced the possibility of accident happen
+                  \item Migrating Go Runtime(1.12 -> 1.13), And Landing Dependence Manage tool to GoModule
+                \end{enumerate}
+          \item Bussine Supporting
+                \begin{enumerate}
+                  \item Support Daily Peek Lesson from 200 Per Day to 700 Per day.
+                \end{enumerate}
+        \end{itemize}
+  \item Tech Stack: Golang, PostgreSQL, Redis, Gin, Jenkins, AliCloud DevTools(Monitoring, Logging, Kubernetes, ObjectStorage, Alimns MQ)
+\end{itemize}
+
+
+\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
+\role{\LaTeX, Maintainer}{Individual Projects}
+An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+\begin{itemize}
+  \item Easy to be further customized or extended
+  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
+  \item FontAwesome 4.5.0 support
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: Python，GO > shell > JavaScript
+  \item Programming Languages: Golang> Python > Rust > JavaScript
   \item Platform: Linux
-  \item Other: git, docker, jenkins
-  \item Development: Web, git, BackendDevelopment, DevOPS
+  \item Ops Skill: Kubernetes, Git, Docker, Jenkins, Graylog, OpenTSDB, Grafana
+  \item Development: Web, xxx
 \end{itemize}
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Guangdong University of Technology (GDUT)}, guangzhou, China}{2013 -- 2017}
-\textit{B.S.} in Internet of Thing
 
-\section{\faHeartO\ Programming Apart from work }
-\textit{Finish MIT 6.824 Distributed System Course}
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Guangdong University of Technology (GDUT)}, Guangzhou, China}{2013 -- 2017}
+\textit{B.S.} in Internet of Things(IoTs)
+
+\section{\faHeartO\ Honors and Awards}
+\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
+\datedline{Other awards}{2015}
 
 \section{\faInfo\ Miscellaneous}
 \begin{itemize}[parsep=0.5ex]
-  \item Blog: http://ray1888.github.io 
-  \item GitHub: https://github.com/ray1888
-  \item Languages: English - Fluent(CET-6 score:509), Mandarin - Native speaker, Cantonese - Native speaker
+  \item Blog: http://your.blog.me
+  \item GitHub: https://github.com/username
+  \item Languages: English - Fluent, Mandarin - Native speaker
 \end{itemize}
 
 %% Reference
